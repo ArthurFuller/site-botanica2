@@ -1,0 +1,22 @@
+# PDFs (arquivos de estudo)
+*.pdf
+
+# Imagens que não devem ir para o repositório
+NÃO CAI.JPEG
+
+# Arquivos de documentação interna
+GABARITO_COMPLETO_BOTANICA.md
+GABARITO_ATUALIZADO_BOTANICA.md
+VERIFICACAO_CONTEUDO_SITE.md
+VERIFICACAO_RESPONSIVIDADE.md
+QUESTOES_BOTANICA.md
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arquivos temporários
+*.tmp
+*.bak
+*~

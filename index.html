@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo de Botânica - Fungos, Samambaias e Licófitas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Barra Superior -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="logo">
+                    <i class="fas fa-leaf"></i>
+                    <h1>Resumo de Botânica</h1>
+                </div>
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" placeholder="Buscar conteúdo..." class="search-input" id="searchInput">
+                        <button class="search-btn" id="searchBtn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <button id="themeToggle" class="theme-toggle" title="Alternar modo escuro">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Barra de Navegação -->
+        <div class="nav-bar">
+            <div class="container">
+                <nav class="nav">
+                    <button class="nav-toggle" id="navToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#introducao" class="nav-link">Introdução</a></li>
+                        <li><a href="#fungos" class="nav-link">Fungos</a></li>
+                        <li><a href="#simbioticas" class="nav-link">Relações Simbióticas</a></li>
+                        <li><a href="#liquens" class="nav-link">Liquens</a></li>
+                        <li><a href="#samambaias" class="nav-link">Samambaias</a></li>
+                        <li><a href="#licofitas" class="nav-link">Licófitas</a></li>
+                        <li><a href="#morfologia" class="nav-link">Morfologia</a></li>
+                        <li><a href="#reproducao" class="nav-link">Reprodução</a></li>
+                        <li><a href="#quiz" class="nav-link">Quiz</a></li>
+                        <li><a href="#simulado" class="nav-link">Simulado</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Botânica: Fungos, Samambaias e Licófitas</h2>
+                <p>Explore a diversidade dos criptógamos e suas adaptações evolutivas</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">9</span>
+                        <span class="stat-label">Filos de Fungos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">80%</span>
+                        <span class="stat-label">Plantas com Micorrizas</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">9</span>
+                        <span class="stat-label">Famílias de Samambaias</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            
+            <!-- Introdução -->
+            <section id="introducao" class="section">
+                <div class="section-header">
+                    <h2><i class="fas fa-seedling"></i> Introdução aos Criptógamos</h2>
+                    <p>Fungos, samambaias e licófitas: organismos essenciais para os ecossistemas terrestres</p>
+                </div>
+                
+                <div class="info-card highlight">
+                    <h3>O Que São Criptógamos?</h3>
+                    <p>Criptógamos são organismos que não produzem flores ou sementes, reproduzindo-se por esporos. Este grupo inclui fungos, samambaias, licófitas, musgos e algas.</p>
+                    <div class="feature-list">
+                        <span class="feature-tag">Reprodução por esporos</span>
+                        <span class="feature-tag">Sem flores ou sementes</span>
+                        <span class="feature-tag">Fundamentais para ecossistemas</span>
+                        <span class="feature-tag">Diversidade morfológica</span>
+                    </div>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="info-card">
+                        <h3>🍄 Fungos</h3>
+                        <ul>
+                            <li><strong>Eucariontes heterotróficos</strong></li>
+                            <li><strong>Parede celular de quitina</strong></li>
+                            <li><strong>Não realizam fotossíntese</strong></li>
+                            <li><strong>Decompositores essenciais</strong></li>
+                            <li><strong>Relações simbióticas</strong> (micorrizas, liquens)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3>🌿 Samambaias e Licófitas</h3>
+                        <ul>
+                            <li><strong>Plantas vasculares</strong> (xilema e floema)</li>
+                            <li><strong>Sem sementes</strong></li>
+                            <li><strong>Alternância de gerações</strong></li>
+                            <li><strong>Dependência de água</strong> para reprodução</li>
+                            <li><strong>Esporófito dominante</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fungos -->
+            <section id="fungos" class="section">
+                <div class="section-header">
+                    <h2><i class="fas fa-mushroom"></i> Fungos - Características Gerais</h2>
+                    <p>Organismos heterotróficos essenciais para a ciclagem de nutrientes</p>
+                </div>
+
+                <div class="info-card highlight">
+                    <h3>1.1. Conceito e Características Gerais</h3>
+                    <div class="cards-grid">
+                        <div class="info-card">
+                            <h4>Definição</h4>
+                            <ul>
+                                <li><strong>Organismos eucariontes</strong></li>
+                                <li><strong>Heterotróficos:</strong> Obtêm nutrientes por absorção</li>
+                                <li><strong>Não possuem clorofila:</strong> Não realizam fotossíntese</li>
+                                <li><strong>Parede celular de quitina</strong> (como artrópodes)</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h4>Estrutura Corporal</h4>
+                            <ul>
+                                <li><strong>Hifas:</strong> Estruturas filamentosas</li>
+                                <li><strong>Micélio:</strong> Conjunto de hifas</li>
+                                <li><strong>Crescimento rápido:</strong> Até 1 kg de hifas/dia</li>
+                                <li><strong>Septos:</strong> Paredes transversais nas hifas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <h3>Modos de Vida dos Fungos</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Modo de Vida</th>
+                                <th>Descrição</th>
+                                <th>Exemplo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Saprófitos</strong></td>
+                                <td>Decompõem matéria orgânica morta, reciclando nutrientes para o solo</td>
+                                <td>Trametes versicolor</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Parasitas</strong></td>
+                                <td>Obtêm energia de organismos vivos, podendo causar doenças</td>
+                                <td>Cyttaria espinosae</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Micorrízicos</strong></td>
+                                <td>Formam associações mutualísticas com raízes de plantas</td>
+                                <td>Cortinarius lebre</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="info-card highlight">
+                    <h3>🌍 Importância Ecológica</h3>
+                    <div class="cards-grid">
+                        <div class="info-card">
+                            <h4>Decomposição</h4>
+                            <ul>
+                                <li>Liberam CO₂ para a atmosfera</li>
+                                <li>Retornam nitrogênio (N) ao solo</li>
+                                <li>Reciclam nutrientes essenciais</li>
+                                <li>Fundamentais para ciclos biogeoquímicos</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h4>Conflitos com Humanos</h4>
+                            <ul>
+                                <li><strong>5.000+ espécies</strong> atacam culturas</li>
+                                <li><strong>200+ espécies</strong> patogênicas para humanos</li>
+                                <li>Causam perdas econômicas significativas</li>
+                                <li>Doenças em plantas e animais</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3>🏆 Recordes e Curiosidades</h3>
+                    <div class="cards-grid">
+                        <div class="info-card">
+                            <h4>Armillaria ostoyae</h4>
+                            <p><strong>O Maior Organismo Vivo do Planeta</strong></p>
+                            <ul>
+                                <li><strong>Tamanho:</strong> Mais de 600 hectares</li>
+                                <li><strong>Idade:</strong> 400-1.000 anos</li>
+                                <li><strong>Localização:</strong> Oregon, EUA</li>
+                                <li><strong>Tipo:</strong> Fungo parasita de árvores</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h4>Tolerância Extrema</h4>
+                            <p><strong>Temperaturas de -10°C a 60°C</strong></p>
+                            <ul>
+                                <li>Cladosporium herbarum</li>
+                                <li>Chaetomium sp.</li>
+                                <li>Adaptação a ambientes hostis</li>
+                                <li>Sobrevivência em condições extremas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <h3>Grupos de Fungos</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Classificação</th>
+                                <th>Filos/Grupos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Stricto Sensu</strong><br><small>(Sentido Estrito)</small></td>
+                                <td>
+                                    <ul style="margin: 0; padding-left: 1.5rem;">
+                                        <li>Ascomycota</li>
+                                        <li>Basidiomycota</li>
+                                        <li>Zygomycota</li>
+                                        <li>Glomeromycota</li>
+                                        <li>Chytridiomycota</li>
+                                        <li>Oomycota</li>
+                                        <li>Neocallimastigomycota</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Lato Sensu</strong><br><small>(Sentido Amplo)</small></td>
+                                <td>
+                                    <ul style="margin: 0; padding-left: 1.5rem;">
+                                        <li>Myxomicetes</li>
+                                        <li>Zoospóricos</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Relações Simbióticas -->
+            <section id="simbioticas" class="section">
+                <div class="section-header">
+                    <h2><i class="fas fa-handshake"></i> Relações Simbióticas</h2>
+                    <p>Associações mutualísticas essenciais para os ecossistemas</p>
+                </div>
+
+                <div class="info-card highlight">
+                    <h3>🤝 Quatro Tipos Principais de Simbiose</h3>
+                    <p>Os fungos estabelecem relações mutualísticas fundamentais com diversos organismos, beneficiando ambas as partes envolvidas.</p>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="info-card">
+                        <h3>1. Micorrizas</h3>
+                        <p><strong>Associação fungo + raízes de plantas</strong></p>
+                        <ul>
+                            <li><strong>Prevalência:</strong> 80% das plantas vasculares</li>
+                            <li><strong>Fungo recebe:</strong> Açúcares da planta</li>
+                            <li><strong>Planta recebe:</strong> Maior absorção de água e minerais</li>
+                            <li><strong>Tipos:</strong> Ectomicorrizas, Endomicorrizas, Orquídeas, Ericoides</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>2. Liquens</h3>
+                        <p><strong>Associação fungo + alga/cianobactéria</strong></p>
+                        <ul>
+                            <li><strong>Fotobionte:</strong> Alga verde ou cianobactéria</li>
+                            <li><strong>Micobionte:</strong> Fungo (98% Ascomycota)</li>
+                            <li><strong>Benefício mútuo:</strong> Fotossíntese + proteção</li>
+                            <li><strong>Diversidade:</strong> 4 tipos de talo, 5 substratos</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>3. Fungos Endófitos</h3>
+                        <p><strong>Vivem dentro de folhas e caules</strong></p>
+                        <ul>
+                            <li><strong>Relação:</strong> Geralmente mutualística</li>
+                            <li><strong>Proteção:</strong> Contra herbívoros e patógenos</li>
+                            <li><strong>Compostos:</strong> Produzem substâncias bioativas</li>
+                            <li><strong>Benefício:</strong> Aumentam resistência da planta</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>4. Jardins de Fungos</h3>
+                        <p><strong>Cultivados por formigas</strong></p>
+                        <ul>
+                            <li><strong>Formigas:</strong> Cortadeiras (Atta, Acromyrmex)</li>
+                            <li><strong>Substrato:</strong> Folhas cortadas pelas formigas</li>
+                            <li><strong>Alimento:</strong> Fungos para a colônia</li>
+                            <li><strong>Mutualismo:</strong> Ambos dependem um do outro</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Liquens -->
+            <section id="liquens" class="section">
+                <div class="section-header">
+                    <h2><i class="fas fa-layer-group"></i> Fungos Liquenizados</h2>
+                    <p>Associações entre algas e fungos formando organismos únicos</p>
+                </div>
+
+                <div class="info-card highlight">
+                    <h3>Definição de Liquens</h3>
+                    <p>Liquens são associações simbióticas entre fungos (micobionte) e algas ou cianobactérias (fotobionte). O fungo fornece proteção e estrutura, enquanto a alga realiza fotossíntese.</p>
+                </div>
+
+                <div class="table-container">
+                    <h3>Tipos de Liquens por Substrato</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Tipo</th>
+                                <th>Substrato</th>
+                                <th>Características</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Corticícolas</strong></td>
+                                <td>Córtex (casca) de árvores</td>
+                                <td>Mais comuns em florestas; indicadores de qualidade do ar</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Saxícolas</strong></td>
+                                <td>Rochas (saxon = rocha)</td>
+                                <td>Pioneiros na colonização de rochas; intemperismo biológico</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Terrícolas</strong></td>
+                                <td>Solo</td>
+                                <td>Importantes em ambientes áridos; fixação de nitrogênio</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Muscícolas</strong></td>
+                                <td>Junto com musgos</td>
+                                <td>Ambientes úmidos; competição por espaço</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Foliícolas</strong></td>
+                                <td>Folhas de plantas</td>
+                                <td>Comuns em florestas tropicais úmidas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-container">
+                    <h3>Tipos de Talo em Liquens</h3>
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Tipo de Talo</th>
+                                <th>Características</th>
+                                <th>Fixação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Filamentoso</strong></td>
+                                <td>Tipo mais simples; formado por filamentos frouxos e entrelaçados</td>
+                                <td>Filamentos aderidos ao substrato</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Crostoso</strong></td>
+                                <td>Bastante achatados; sem córtex inferior; hifas da medula prendem o líquen</td>
+                                <td>Aderido diretamente ao substrato</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Folioso</strong></td>
+                                <td>Preso por rizinas ou tomento; apresenta lobos ou lacínias (divisões)</td>
+                                <td>Rizinas ou tomento</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fruticoso</strong></td>
+                                <td>Ramos simples ou divididos; cilíndricos ou achatados; ereto, pendente ou prostrado</td>
+                                <td>Um ou poucos pontos de fixação</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="info-card">
+                    <h3>Reprodução dos Liquens</h3>
+                    <div class="cards-grid">
+                        <div class="info-card">
+                            <h4>Assexuada</h4>
+                            <ul>
+                                <li><strong>Sorédios:</strong> Propágulos vegetativos</li>
+                                <li>Contêm células de alga e hifas de fungo</li>
+                                <li>Dispersão pelo vento ou água</li>
+                                <li>Formam novos liquens diretamente</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h4>Dependência</h4>
+                            <ul>
+                                <li>Fungos dependem das algas para sobreviver</li>
+                                <li>Algas fornecem nutrientes via fotossíntese</li>
+                                <li>Fungo fornece proteção e estrutura</li>
+                                <li>Relação obrigatória para o fungo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Samambaias -->
+            <section id="samambaias" class="section">
+                <div class="section-header">
+                    <h2><i class="fas fa-spa"></i> Samambaias - Filo Monilophyta</h2>
+                    <p>Plantas vasculares sem sementes com grande diversidade morfológica</p>
+                </div>
+
+                <div class="info-card highlight">
+                    <h3>2.1. Características Gerais</h3>
+                    <div class="feature-list">
+                        <span class="feature-tag">Plantas vasculares (xilema e floema)</span>
+                        <span class="feature-tag">Sem sementes</span>
+                        <span class="feature-tag">Alternância de gerações</span>
+                        <span class="feature-tag">Esporófito dominante</span>
+                        <span class="feature-tag">Dependência de água</span>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3>2.2. Ciclo Reprodutivo</h3>
+                    <div class="process-flow">
+                        <div class="flow-step">
+                            <div class="step-number">1</div>
+                            <h4>Esporófito</h4>
+                            <p>Grande, fotossintetizante, vida longa</p>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">
+                            <div class="step-number">2</div>
+                            <h4>Esporos</h4>
+                            <p>Produzidos em soros</p>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">
+                            <div class="step-number">3</div>
+                            <h4>Gametófito</h4>
+                            <p>Pequeno (prótalo), vida curta</p>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">
+                            <div class="step-number">4</div>
+                            <h4>Fecundação</h4>
+                            <p>Requer água (anterozoides móveis)</p>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">
+                            <div class="step-number">5</div>
+                            <h4>Novo Esporófito</h4>
+                            <p>Zigoto desenvolve-se</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <h3>Principais Famílias de Samambaias</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Família</th>
+                                <th>Características dos Soros</th>
+                                <th>Indúsio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Anemiaceae</strong></td>
+                                <td>Contidos nas pinas basais diferenciadas</td>
+                                <td>Presente</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Lygodiaceae</strong></td>
+                                <td>Contidos nos soróforos (margens diferenciadas)</td>
+                                <td>Presente</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Saccolomataceae</strong></td>
+                                <td>Marginais a submarginais, esféricos</td>
+                                <td>Em forma de bolsa ou copo</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pteridaceae</strong></td>
+                                <td>Ao longo das margens</td>
+                                <td>Pseudoindúsio (margem revoluta)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tectariaceae</strong></td>
+                                <td>Circular ou reniforme</td>
+                                <td>Circular ou reniforme, peltado</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Aspleniaceae</strong></td>
+                                <td>Alongados ao longo das nervuras</td>
+                                <td>Presente</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Blechnaceae</strong></td>
+                                <td>Ao longo das nervuras laterais</td>
+                                <td>Linear</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cyatheaceae</strong></td>
+                                <td>Arborescentes (com tronco)</td>
+                                <td>Variável</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Polypodiaceae</strong></td>
+                                <td>Redondos a alongados</td>
+                                <td><strong>Ausente</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="info-card">
+                        <h3>Características Morfológicas</h3>
+                        <ul>
+                            <li><strong>Pecíolos:</strong> Estriados, cilíndricos ou achatados</li>
+                            <li><strong>Coloração:</strong> Amarelados a marrom-escuros</li>
+                            <li><strong>Revestimento:</strong> Pilosos ou escamosos</li>
+                            <li><strong>Nervuras:</strong> Livres ou anastomosadas</li>
+                            <li><strong>Esporos:</strong> Tetraédrico-globosos, variados</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Samambaias Arborescentes</h3>
+                        <p><strong>Família Cyatheaceae</strong></p>
+                        <ul>
+                            <li>Formam troncos verdadeiros</li>
+                            <li>Podem atingir vários metros de altura</li>
+                            <li>Importantes em florestas tropicais</li>
+                            <li>Crescimento lento</li>
+                            <li>Indicadoras de ambientes preservados</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Licófitas -->
+            <section id="licofitas" class="section">
+                <div class="section-header">
+                    <h2><i class="fas fa-tree"></i> Licófitas - Filo Lycophyta</h2>
+                    <p>Plantas vasculares primitivas com importância evolutiva</p>
+                </div>
+
+                <div class="info-card highlight">
+                    <h3>2.4. Características Gerais das Licófitas</h3>
+                    <p>Grupo de plantas vasculares primitivas que representam uma linhagem ancestral importante na evolução das plantas terrestres.</p>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="info-card">
+                        <h3>Características Distintivas</h3>
+                        <ul>
+                            <li><strong>Microfilos:</strong> Folhas simples com uma única nervura</li>
+                            <li><strong>Estróbilos:</strong> Cones reprodutivos terminais</li>
+                            <li><strong>Esporângios:</strong> Em espigas terminais</li>
+                            <li><strong>Disposição foliar:</strong> Geralmente em espiral</li>
+                            <li><strong>Tamanho:</strong> Geralmente pequenas</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Família Lycopodiaceae</h3>
+                        <ul>
+                            <li>Plantas vasculares primitivas</li>
+                            <li>Folhas pequenas dispostas em espiral</li>
+                            <li>Esporângios em espigas terminais</li>
+                            <li>Importantes no registro fóssil</li>
+                            <li>Grupos ancestrais das plantas com sementes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info-card highlight">
+                    <h3>Importância Evolutiva</h3>
+                    <p>As licófitas são fundamentais para compreender a evolução das plantas terrestres, representando uma das primeiras linhagens de plantas vasculares. Sua diversidade era muito maior no passado geológico.</p>
+                </div>
+            </section>
+
+            <!-- Morfologia -->
+            <section id="morfologia" class="section">
+                <div class="section-header">
+                    <h2><i class="fas fa-microscope"></i> Morfologia dos Fungos</h2>
+                    <p>Estruturas anatômicas dos cogumelos e suas funções</p>
+                </div>
+
+                <div class="info-card highlight">
+                    <h3>🍄 Anatomia de um Cogumelo</h3>
+                    <p>Os cogumelos apresentam estruturas especializadas essenciais para identificação e compreensão de sua biologia.</p>
+                </div>
+
+                <div class="table-container">
+                    <h3>Estruturas Principais de um Cogumelo</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Estrutura</th>
+                                <th>Descrição</th>
+                                <th>Função</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Píleo (Chapéu)</strong></td>
+                                <td>Parte superior do cogumelo; diferentes formas conforme desenvolvimento</td>
+                                <td>Sustenta a superfície onde os esporos estão alojados</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Himênio</strong></td>
+                                <td>Região fértil localizada na parte inferior do píleo</td>
+                                <td>Produção de esporos (lamelas, poros ou espinhos)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Anel</strong></td>
+                                <td>Estrutura anular no estipe; pode ser espessa ou membranosa</td>
+                                <td>Resquício do véu parcial; proteção do himênio jovem</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Estipe (Pé)</strong></td>
+                                <td>Sustenta o píleo; estrutura interna variável (oca, esponjosa, fibrosa)</td>
+                                <td>Suporte estrutural; elevação do píleo</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Vulva</strong></td>
+                                <td>Estrutura basal; nem todos cogumelos possuem; difícil de observar</td>
+                                <td>Resquício do véu universal; proteção inicial</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="info-card">
+                        <h3>Filo Ascomycota</h3>
+                        <p><strong>Grupo Mais Abundante</strong></p>
+                        <ul>
+                            <li><strong>Células septadas</strong></li>
+                            <li><strong>Inclui:</strong> Leveduras e fungos liquenizados</li>
+                            <li><strong>Tamanho:</strong> Micro e macroscópicos</li>
+                            <li><strong>Exemplos:</strong> Chlorociboria, Nectria, Xylaria</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Filo Basidiomycota</h3>
+                        <p><strong>Cogumelos Tradicionais</strong></p>
+                        <ul>
+                            <li><strong>Células septadas com dolíporo</strong></li>
+                            <li><strong>Inclui:</strong> Cogumelos e orelhas-de-pau</li>
+                            <li><strong>Comestíveis e venenosos</strong></li>
+                            <li><strong>Exemplos:</strong> Amauroderma, Ganoderma, Laetiporus</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3>Identificação de Esporos</h3>
+                    <p>Os esporos são essenciais para identificação de fungos, apresentando diferentes formas, tamanhos e ornamentações que são observados em microscópio.</p>
+                </div>
+            </section>
+
+            <!-- Reprodução -->
+            <section id="reproducao" class="section">
+                <div class="section-header">
+                    <h2><i class="fas fa-sync-alt"></i> Reprodução</h2>
+                    <p>Estratégias reprodutivas de fungos e plantas vasculares</p>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="info-card">
+                        <h3>Reprodução em Fungos</h3>
+                        <h4>Sexuada</h4>
+                        <ul>
+                            <li><strong>Cariogamia:</strong> Fusão de núcleos</li>
+                            <li>Formação de esporos sexuais</li>
+                            <li>Variabilidade genética</li>
+                        </ul>
+                        <h4>Assexuada</h4>
+                        <ul>
+                            <li><strong>Fragmentação:</strong> Quebra do micélio</li>
+                            <li><strong>Brotamento:</strong> Novos indivíduos</li>
+                            <li><strong>Esporos assexuados</strong></li>
+                            <li><strong>Sorédios:</strong> Em liquens</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Reprodução em Samambaias</h3>
+                        <h4>Alternância de Gerações</h4>
+                        <ul>
+                            <li><strong>Esporófito:</strong> Dominante, fotossintetizante</li>
+                            <li><strong>Gametófito:</strong> Pequeno, vida curta</li>
+                            <li><strong>Esporos:</strong> Produzidos em soros</li>
+                            <li><strong>Fecundação:</strong> Requer água</li>
+                            <li><strong>Anterozoides:</strong> Móveis, flagelados</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quiz Section -->
+            <section id="quiz" class="section">
+                <div class="section-header">
+                    <h2><i class="fas fa-question-circle"></i> Quiz Interativo</h2>
+                    <p>Teste seus conhecimentos sobre botânica</p>
+                </div>
+
+                <!-- Quiz Start Screen -->
+                <div id="quizStart" class="quiz-container">
+                    <div class="hero" style="margin: 0; padding: 3rem 2rem;">
+                        <div class="quiz-stats">
+                            <div class="quiz-stat">
+                                <i class="fas fa-brain" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                                <h3>Aprenda</h3>
+                                <p>Teste seus conhecimentos</p>
+                            </div>
+                            <div class="quiz-stat">
+                                <i class="fas fa-trophy" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                                <h3>Desafie-se</h3>
+                                <p>Diferentes níveis</p>
+                            </div>
+                            <div class="quiz-stat">
+                                <i class="fas fa-chart-line" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                                <h3>Evolua</h3>
+                                <p>Acompanhe seu progresso</p>
+                            </div>
+                        </div>
+
+                        <div class="quiz-levels">
+                            <h4>Escolha o nível de dificuldade:</h4>
+                            <div class="level-buttons">
+                                <button class="level-btn" data-level="basico">
+                                    <i class="fas fa-seedling"></i>
+                                    <span>Básico</span>
+                                    <small>5 questões fundamentais</small>
+                                </button>
+                                <button class="level-btn" data-level="intermediario">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>Intermediário</span>
+                                    <small>Questões mais desafiadoras</small>
+                                </button>
+                                <button class="level-btn" data-level="avancado">
+                                    <i class="fas fa-crown"></i>
+                                    <span>Avançado</span>
+                                    <small>Para especialistas</small>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quiz Question Screen -->
+                <div id="quizQuestion" class="quiz-container" style="display: none;">
+                    <div class="quiz-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <span class="progress-text" id="progressText">Questão 1 de 5</span>
+                    </div>
+
+                    <div class="question-card">
+                        <div class="question-header">
+                            <span class="question-category" id="questionCategory">Categoria</span>
+                            <span class="question-number" id="questionNumber">1</span>
+                        </div>
+                        <h3 class="question-text" id="questionText">Pergunta aparecerá aqui</h3>
+                        <div class="answer-options" id="answerOptions">
+                            <!-- Options will be inserted here by JavaScript -->
+                        </div>
+                        <div class="question-feedback" id="questionFeedback" style="display: none;">
+                            <div class="feedback-content">
+                                <div class="feedback-icon" id="feedbackIcon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="feedback-text">
+                                    <h4 id="feedbackTitle">Correto!</h4>
+                                    <p id="feedbackExplanation">Explicação aqui</p>
+                                    <a href="#" class="feedback-link">
+                                        Revisar conteúdo <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-controls">
+                            <button class="quiz-btn secondary" id="prevBtn" style="display: none;">
+                                <i class="fas fa-arrow-left"></i> Anterior
+                            </button>
+                            <button class="quiz-btn primary" id="nextBtn" style="display: none;">
+                                Próxima <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quiz Results Screen -->
+                <div id="quizResults" class="quiz-container" style="display: none;">
+                    <div class="results-card">
+                        <div class="results-header">
+                            <div class="results-icon" id="resultsIcon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h3 id="resultsTitle">Parabéns!</h3>
+                            <p id="resultsSubtitle">Você completou o quiz</p>
+                        </div>
+                        <div class="results-stats">
+                            <div class="result-stat">
+                                <span class="stat-number" id="finalScore">0</span>
+                                <span class="stat-label">Acertos</span>
+                            </div>
+                            <div class="result-stat">
+                                <span class="stat-number" id="finalPercentage">0%</span>
+                                <span class="stat-label">Aproveitamento</span>
+                            </div>
+                            <div class="result-stat">
+                                <span class="stat-number" id="finalGrade">-</span>
+                                <span class="stat-label">Conceito</span>
+                            </div>
+                        </div>
+                        <div class="results-breakdown">
+                            <h4>Desempenho por Tópico</h4>
+                            <div class="topic-results">
+                                <!-- Topic results will be inserted here -->
+                            </div>
+                        </div>
+                        <div class="results-actions">
+                            <button class="quiz-btn secondary" id="reviewBtn">
+                                <i class="fas fa-book"></i> Revisar Conteúdo
+                            </button>
+                            <button class="quiz-btn primary" id="restartBtn">
+                                <i class="fas fa-redo"></i> Fazer Novamente
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Simulado Section -->
+            <section id="simulado" class="section">
+                <div class="section-header">
+                    <h2><i class="fas fa-clipboard-list"></i> Simulado Completo</h2>
+                    <p>Prepare-se para avaliações com questões abrangentes</p>
+                </div>
+
+                <div class="info-card highlight">
+                    <h3>📝 Sobre o Simulado</h3>
+                    <p>O simulado completo contém questões de todos os tópicos estudados sobre fungos, samambaias e licófitas.</p>
+                    <div class="cards-grid">
+                        <div class="info-card">
+                            <h4>Características</h4>
+                            <ul>
+                                <li><strong>20 questões</strong> abrangentes</li>
+                                <li><strong>Todos os tópicos</strong> do conteúdo</li>
+                                <li><strong>Tempo sugerido:</strong> 40 minutos</li>
+                                <li><strong>Feedback detalhado</strong> ao final</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h4>Tópicos Cobertos</h4>
+                            <ul>
+                                <li>Características gerais dos fungos</li>
+                                <li>Relações simbióticas</li>
+                                <li>Liquens e micorrizas</li>
+                                <li>Famílias de samambaias</li>
+                                <li>Licófitas e evolução</li>
+                                <li>Morfologia e reprodução</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero" style="margin: 0; padding: 3rem 2rem;">
+                    <div class="quiz-stats">
+                        <div class="quiz-stat">
+                            <i class="fas fa-clipboard-check" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                            <h3>20 Questões</h3>
+                            <p>Avaliação completa</p>
+                        </div>
+                        <div class="quiz-stat">
+                            <i class="fas fa-clock" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                            <h3>40 Minutos</h3>
+                            <p>Tempo sugerido</p>
+                        </div>
+                        <div class="quiz-stat">
+                            <i class="fas fa-star" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                            <h3>Todos os Tópicos</h3>
+                            <p>Conteúdo completo</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem; text-align: center;">
+                        <a href="simulado-botanica.html" class="level-btn" style="max-width: 400px; margin: 0 auto; display: inline-block; text-decoration: none;">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Iniciar Simulado</span>
+                            <small>Teste seus conhecimentos com 20 questões abrangentes</small>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Resumo de Botânica - Material Educacional</p>
+            <p>Baseado nos PDFs "Samambaias e Licófitas" e "Fungos"</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -823,11 +823,11 @@ document.addEventListener('DOMContentLoaded', function() {
         if (percentage >= 80) {
             if (resultsIcon) resultsIcon.innerHTML = '<i class="fas fa-trophy"></i>';
             if (resultsTitle) resultsTitle.textContent = 'Excelente!';
-            if (resultsSubtitle) resultsSubtitle.textContent = 'Você domina o conteúdo sobre botânica';
+            if (resultsSubtitle) resultsSubtitle.textContent = 'Você domina o conteúdo de Botânica!';
         } else if (percentage >= 60) {
             if (resultsIcon) resultsIcon.innerHTML = '<i class="fas fa-medal"></i>';
             if (resultsTitle) resultsTitle.textContent = 'Bom trabalho!';
-            if (resultsSubtitle) resultsSubtitle.textContent = 'Continue estudando para melhorar';
+            if (resultsSubtitle) resultsSubtitle.textContent = 'Continue estudando para melhorar ainda mais!';
         } else {
             if (resultsIcon) resultsIcon.innerHTML = '<i class="fas fa-book"></i>';
             if (resultsTitle) resultsTitle.textContent = 'Continue estudando!';
